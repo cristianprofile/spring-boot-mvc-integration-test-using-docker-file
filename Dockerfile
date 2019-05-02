@@ -14,7 +14,6 @@ ARG JAR_FILE=target/rest-demo-docker-0.0.3-SNAPSHOT.jar
 ADD ${JAR_FILE} rest-demo-docker.jar
 
 ## Run the jar file
-#ENTRYPOINT ["java"," ","-jar","/websocket-demo.jar"]
+ENTRYPOINT ["java"," ","-jar","/rest-demo-docker.jar"]
 
-CMD java -jar rest-demo-docker.jar
 
